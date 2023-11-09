@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url("fonts/Comfortaa-VariableFont_wght.ttf");
+}
+*{margin:0;
+	padding:0;
+	box-sizing:border-box;	
+	font-family: 'Comfortaa';
+}
+body{background: linear-gradient(135deg,#ea5959,#4e085f);
+	width:100%;	
+	min-height: 100vh;/*высота элемента должна быть равна высоте всей видимой области браузера.*/
+	padding:5%;
+	margin:auto;
+	border-radius:3%;		
+}
+.app-container{
+	width: 100%;
+	max-width: 540px;
+	background: #fff;
+	border-radius: 10px;
+	margin: 5% auto 2%;
+	padding: 2% 2% 8%;
+}
+.app-container h2{
+	color: #002765;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:2% 0 4% 0;
+}
+.app-container h2 img{
+	width: 15px;
+	margin-left: 2%;
+}
+.input-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #edeef0;
+	border-radius: 30px;	
+	margin: 0 2% 2% 2%;
+}
+input{
+	width: 100%;
+	border: none;
+	outline: none;
+	background: transparent;/* используется для задания прозрачного фона */
+	padding: 2%;
+	font-weight: 12px;
+}
+.desktop-button{
+	border: none;
+	outline: none;
+	padding: 2% 5%;
+	background: #e36a5c;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer; /*курсор мыши принимает вид указателя, обычно представленного значком руки с вытянутым пальцем. */
+	border-radius: 40px;
+}
+.mobile-button{
+	display: none;
+}
+ul li{
+	list-style: none;
+	font-size: 16px;
+	padding: 2% 1% 2% 8%;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+}
+ul li::before{
+	content: '';
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-image: url(img/unchecked.png);
+	background-size: cover;
+	background-position: center;
+	top: 23%;
+	left: 2.5%;
+}
+ul li.checked{
+	color: #555;
+	text-decoration: line-through;
+}
+ul li.checked::before{
+	background-image: url(img/checked.png);
+}
+ul li span{
+	position: absolute;
+	right: 0;
+	top: 2%;
+	width: 40px;
+	height: 40px;
+	font-size: 22px;
+	color: #555;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+}
+ul li span:hover{
+	background: #edeef0;
+}

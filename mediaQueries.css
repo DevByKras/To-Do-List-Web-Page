@@ -1,0 +1,48 @@
+
+@media (max-width: 480px) {
+    .app-container {
+        border-radius: 0;
+    }
+    .input-container{        
+        margin: 0 1% 5% 1%;
+    }
+    input{
+        padding: 1%;
+        font-weight: 6px;
+        margin-left: 5%;
+    }
+    .desktop-button {
+        display: none; /* Скрыть кнопку для десктопной версии на мобильных устройствах */
+    }
+    .mobile-button {
+        display: inline-block; /* Отобразить кнопку для мобильной версии */
+        border: none;
+        outline: none;
+        padding: 2% 5%;
+        background: #e36a5c;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer; /*курсор мыши принимает вид указателя, обычно представленного значком руки с вытянутым пальцем. */
+        border-radius: 40px;
+    }
+    ul li{       
+        font-size: 12px;
+        padding: 2% 1% 2% 8%;  
+    }
+    ul li::before{        
+        height: 10px;
+        width: 10px;        
+        top: 30%;
+        left: 2.5%;
+    }
+    ul li span{       
+        right: 0;
+        top: 2%;
+        width: 25px;
+        height: 25px;
+        font-size: 14px;        
+        line-height: 25px;        
+        text-align: center;
+        
+    }
+}
