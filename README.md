@@ -12,3 +12,6 @@ It allows users to add tasks, mark them as completed, and delete them. The page 
 1. Clone the repository
 2. Open the index.html file in a web browser.
 3. Enter your tasks in the input box and manage them using the provided buttons.
+
+## Additional Information
+The project was developed within the framework of web development practice. It is created for educational purposes only and is not a commercial product.
